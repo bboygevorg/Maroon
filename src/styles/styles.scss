@@ -1,0 +1,11 @@
+$bgColor: #F9F7F6;
+$fontFamily: 'm-plus-1p';
+$fontFamily2: relawey;
+
+@mixin bgColor {
+  background-color: $bgColor;
+}
+
+@mixin font {
+  font-family: $fontFamily;
+}

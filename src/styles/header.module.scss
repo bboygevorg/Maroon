@@ -1,0 +1,50 @@
+@import "./styles";
+
+.header {
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #dbdce0;
+  transition: 0.3s;
+  .header_content {
+    width: 108rem;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    a {
+      text-decoration: none;
+      @include font;
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: bold;
+      color: #122947;
+      transition: 1s;
+    }
+    a:hover {
+      color: #8d9c96;
+    }
+    .navigate {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      div {
+        margin: 0 34px;
+      }
+    }
+  }
+}
+
+
+
+.header_transparent {
+  background: 0 0;
+  border-color: transparent;
+}
+
+
