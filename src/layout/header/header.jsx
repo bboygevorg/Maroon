@@ -1,6 +1,6 @@
 import '../styles/styles.scss'
 import classes from '../styles/header.module.scss'
-import Navbar from "../Components/Navbar/Navbar";
+import Navbar from "../components/navbar/navbar";
 
 
 
