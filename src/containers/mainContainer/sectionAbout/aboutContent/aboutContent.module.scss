@@ -1,0 +1,75 @@
+@import "../../../assets/styles/styles.scss";
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 330px;
+  min-width: 330px;
+  margin: 0 20px;
+  color: #122947;
+  .aboutTitle {
+    text-transform: uppercase;
+    font: 500 58px/68px Raleway, "Arial", sans-serif;
+    @include font;
+    margin: 47px 0 10px;
+    text-align: center;
+  }
+  .aboutDescription {
+    font: normal 18px/1.45 "Mplus", "Arial", sans-serif;
+    @include font;
+    margin: 0;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+  }
+  .aboutButton {
+    @include button;
+    margin: 33px auto 0;
+    @include font_3
+  }
+}
+
+@media (max-width: 1199px) {
+  .aboutContent {
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    width: 275px;
+    min-width: 275px;
+    z-index: 2;
+    .aboutTitle {
+      margin: -10px 0 10px;
+      font-size: 54px;
+      line-height: 63px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutContent {
+    position: static;
+    width: 100%;
+    margin: 0 0 35px;
+    transform: none;
+    .aboutTitle {
+      margin:  0 0 5px;
+      font-size: 42px;
+      line-height: 49px;
+    }
+    .aboutDescription {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    .aboutButton {
+      margin-bottom: 25px;
+    }
+    .button {
+      padding: 13px 27px;
+      font-size: 14px;
+    }
+  }
+}
