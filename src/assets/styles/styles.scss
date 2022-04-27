@@ -1,11 +1,89 @@
+@font-face {
+  font-family: 'raleway';
+  src: local('raleway'), url("../../assets/fonts/raleway.woff") format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'raleway';
+  src: local('raleway'), url("../../assets/fonts/raleway.woff2") format('woff2');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'raleway-500';
+  src: local('raleway-500'), url("../../assets/fonts/raleway-500.woff") format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'raleway-500';
+  src: local('raleway-500'), url("../../assets/fonts/raleway-500.woff2") format('woff2');
+  font-weight: 500;
+}
+
+
+@font-face {
+  font-family: 'm-plus-1p';
+  src: local('m-plus-1p'), url("../../assets/fonts/m-plus-1p.woff") format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'm-plus-1p';
+  src: local('m-plus-1p'), url("../../assets/fonts/m-plus-1p.woff") format('woff2');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'm-plus-1p-500';
+  src: local('m-plus-1p'), url("../../assets/fonts/m-plus-1p-500.woff") format('woff1');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'm-plus-1p-500';
+  src: local('m-plus-1p'), url("../../assets/fonts/m-plus-1p-500.woff") format('woff2');
+  font-weight: 500;
+}
+
 $bgColor: #F9F7F6;
-$fontFamily: 'm-plus-1p';
-$fontFamily2: relawey;
+
+$fontFamily1: 'raleway';
+$fontFamily2: 'raleway-500';
+$fontFamily3: 'm-plus-1p';
+$fontFamily4: 'm-plus-1p-500';
 
 @mixin bgColor {
   background-color: $bgColor;
 }
 
 @mixin font {
-  font-family: $fontFamily;
+  font-family: $fontFamily1;
+}
+
+@mixin font_2 {
+  font-family: $fontFamily2;
+}
+
+@mixin font_3 {
+  font-family: $fontFamily3;
+}
+
+@mixin font_4 {
+  font-family: $fontFamily4;
+}
+
+@mixin button {
+  font: 500 16px/1 "Mplus", "Arial", sans-serif;
+  display: block;
+  padding: 10px 27px;
+  color: #122947;
+  background: 0 0;
+  border: 1px solid #b3bac1;
+  border-radius: 2px;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.2s;
+  outline: 0;
 }

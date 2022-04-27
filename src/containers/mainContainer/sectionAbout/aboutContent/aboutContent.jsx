@@ -3,7 +3,7 @@ import classes from './aboutContent.module.scss'
 
 const AboutContent = () => {
     return (
-        <div className={classes.aboutContent}>
+        <>
             <h1 className={classes.aboutTitle}>Maroon</h1>
             <p className={classes.aboutDescription}>
                 Натуральная косметика
@@ -11,7 +11,7 @@ const AboutContent = () => {
                 для бережнего ухода за кожей
             </p>
             <a href="#" className={`${classes.aboutButton} ${classes.button}`}>Подробнее</a>
-        </div>
+        </>
     )
 }
 

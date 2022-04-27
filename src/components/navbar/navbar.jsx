@@ -1,18 +1,35 @@
 import React, {Component} from "react";
-import classes from '../Navbar/navbar.module.scss'
+import classes from './navbar.module.scss'
 import {NavLink} from "react-router-dom";
+import facebook from '../../assets/svg/sprite/facebook-icon.svg'
+import instagram from '../../assets/svg/sprite/instagram-icon.svg'
+import twitter from '../../assets/svg/sprite/twitter-icon.svg'
 
-const Navbar = () => {
+const Navbar = ({className}) => {
     return (
-        <nav className={classes.nav}>
+        <nav className={`${classes.nav} ${className ? className : ''}`}>
             <div className={classes.item}>
-                <NavLink to="/catalog">Каталог</NavLink>
+                <NavLink className={classes.link} to="/catalog">Каталог</NavLink>
+                <NavLink className={classes.link} to="/about">О нас</NavLink>
+                <NavLink className={classes.link} to="/contacts">Контакты</NavLink>
             </div>
-            <div className={classes.item}>
-                <NavLink to="/about">О нас</NavLink>
-            </div>
-            <div className={classes.item}>
-                <NavLink to="/contacts">Контакты</NavLink>
+
+            <div className={`${classes.contacts} ${classes.social}`}>
+                <div className={classes.social_item}>
+                    <a href="#">
+                        <img src={facebook} alt=""/>
+                    </a>
+                </div>
+                <div className={classes.social_item}>
+                    <a href="#">
+                        <img src={instagram} alt=""/>
+                    </a>
+                </div>
+                <div className={classes.social_item}>
+                    <a href="#">
+                        <img src={twitter} alt=""/>
+                    </a>
+                </div>
             </div>
         </nav>
     )

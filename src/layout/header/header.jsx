@@ -1,16 +1,37 @@
-import '../styles/styles.scss'
-import classes from '../styles/header.module.scss'
-import Navbar from "../components/navbar/navbar";
+import '../../assets/styles/styles.scss'
+import classes from './header.module.scss'
+import Navbar from "../../components/navbar/navbar";
+import logo from "../../assets/svg/sprite/logo-icon.svg"
+import login from "../../assets/svg/sprite/user-icon.svg"
+import basket from "../../assets/svg/sprite/cart-icon.svg"
+import {useState} from "react";
 
 
 
 const Header = () => {
+   const [isActiveNavbar, setIsActiveNavbar] = useState(false)
+
     return (
-        <header className={`${classes.header} ${classes.header_transparent}`}>
-            <div className={classes.header_content}>
-                <a href="/">Maroon</a>
-                <div className={classes.navigate}>
-                    <Navbar />
+        <header className={`${classes.header} ${classes.header_transparent} ${classes.header_colored}`}>
+            <button className={classes.burger_menu} onClick={() => {setIsActiveNavbar(!isActiveNavbar)}}/>
+            <a href="/" className={classes.logo}>
+                <img src={logo} alt="maroon"/>
+            </a>
+            <div className={classes.navigate}>
+                <div className={classes.navigation_list}>
+                    <Navbar className={isActiveNavbar ? classes.isActiveNavbar : ''}/>
+                </div>
+                <div className={classes.navigation_data}>
+                    <div className={classes.padding_right}>
+                        <a href="/">
+                            <img className={classes.change_my_color} src={login} alt="login"/>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/">
+                            <img src={basket} alt="basket"/>
+                        </a>
+                    </div>
                 </div>
             </div>
         </header>

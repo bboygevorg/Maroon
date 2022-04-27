@@ -1,5 +1,113 @@
-.main_content {
-  width: 100%;
-  background: url("../img/main@1x.jpg") no-repeat 0 0/cover #ffffff;
-  padding: 131px 0;
+.main {
+  flex-grow: 1;
+  margin-top: 100px;
+  @media (max-width: 767px) {
+    margin-top: 75px;
+  }
+}
+
+.mainNoTopSpaced {
+  margin-top: 0;
+}
+
+.mainBlock {
+  margin-bottom: 140px;
+  @media (max-width: 1199px) {
+    margin-bottom: 120px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 70px;
+  }
+}
+
+.about {
+  background: url("../../assets/img/main@1x.jpg") no-repeat 0 0/cover #ffffff;
+  padding: 131px 0 64px;
+  @media (-webkit-device-pixel-ratio: 1.5),
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    background-image: url("../../assets/img/main@2x.jpg");
+  }
+  @media (max-width: 1199px) {
+    background-image: url("../../assets/img/main-lap@1x.jpg");
+  }
+  @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5),
+  (max-width: 1199px) and (min-resolution: 144dpi),
+  (max-width: 1199px) and (min-resolution: 1.5dppx) {
+      background-image: url("../../assets/img/main-lap@2x.jpg");
+  }
+  @media (max-width: 767px) {
+    padding: 97px 0 55px;
+    background-image: url("../../assets/img/main-mob@1x.jpg");
+  }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5),
+  (max-width: 767px) and (min-resolution: 144dpi),
+  (max-width: 767px) and (min-resolution: 1.5dppx) {
+      background-image: url("../../assets/img/main-mob@2x.jpg");
+  }
+}
+
+.aboutContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  @media (max-width: 1199px) {
+    justify-content: space-between;
+    padding: 0 45px;
+  }
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 330px;
+  margin: 0 20px;
+  color: #122947;
+  @media (max-width: 1199px) {
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    z-index: 2;
+  }
+  @media (max-width: 767px) {
+    position: static;
+    width: 100%;
+    margin: 0 0 35px;
+    transform: none;
+  }
+}
+
+
+.aboutItem {
+  width: 330px;
+  min-width: 330px;
+  @media (max-width: 1199px) {
+    width: 36%;
+    min-width: 0;
+  }
+  @media (max-width: 767px) {
+    width: calc((100% - 30px) / 2);
+    min-width: 130px;
+  }
+
+}
+
+.aboutItem:nth-child(2) {
+  order: -1;
+  @media (max-width: 767px) {
+    order: 0;
+  }
+}
+
+.promoCard {
+  outline: 0;
 }
