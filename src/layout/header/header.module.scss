@@ -3,7 +3,6 @@
 .header {
   position: fixed;
   margin: 0 auto;
-  background: #fff;
   top: 0;
   left: 0;
   right: 0;
@@ -51,6 +50,7 @@
   }
 }
 
+
 .burger_menu_active {
   background: url('../../assets/svg/sprite/cross-icon.svg');
 }
@@ -62,13 +62,13 @@
 }
 
 
-.header_transparent {
+.headerTransparent {
   background: 0 0;
   border-color: transparent;
 }
 
-.header_colored {
-  border-color: #dbdce0;
+.headerColored {
+  background-color: white;
 }
 
 

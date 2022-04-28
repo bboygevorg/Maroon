@@ -9,10 +9,23 @@ import {useState} from "react";
 
 
 const Header = () => {
-   const [isActiveNavbar, setIsActiveNavbar] = useState(false)
+   const [isActiveNavbar, setIsActiveNavbar] = useState(false);
+   const [headerScroll, setHeaderScroll] = useState(false);
+
+   const changeBackground = () => {
+       console.log(window.scrollY)
+
+       if (window.scrollY >= 1) {
+           setHeaderScroll(true)
+       } else {
+           setHeaderScroll(false)
+       }
+   }
+
+   window.addEventListener('scroll', changeBackground);
 
     return (
-        <header className={`${classes.header} ${classes.header_transparent} ${classes.header_colored}`}>
+        <header className={`${classes.header} ${headerScroll ? classes.headerColored : classes.headerTransparent}` }>
             <button className={classes.burger_menu} onClick={() => {setIsActiveNavbar(!isActiveNavbar)}}/>
             <a href="/" className={classes.logo}>
                 <img src={logo} alt="maroon"/>
