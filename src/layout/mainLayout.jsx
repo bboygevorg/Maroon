@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import {useParams} from "react-router-dom";
 import {Header} from "./header/header";
 import Footer from "./footer/footer";
+import {Follow} from "../components/follow/follow";
 
 // const users = [
 //     {
@@ -35,6 +36,7 @@ const MainLayout = ({children}) => {
             {/*{users[id].name}*/}
             {/*{users[id].age}*/}
             {/*{users[id].image}*/}
+            <Follow />
             <Footer />
         </>
     )

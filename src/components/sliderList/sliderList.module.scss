@@ -1,0 +1,71 @@
+@import "../../assets/styles/styles";
+
+
+.sliderPosition {
+  position: relative;
+  width: 230px;
+  @media (max-width: 767px) {
+    margin: 0 auto;
+  }
+
+  .sliderCartImage {
+    width: 100%;
+  }
+  .sliderInformation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    .sliderCartTitle {
+      margin: 0 10px 0;
+      text-align: center;
+      @include font;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 1.45;
+    }
+    .sliderCartDescription {
+      @include font_3;
+      font-size: 13px;
+      z-index: 1;
+      margin-top: 0;
+      margin-bottom: 9px;
+      text-align: center;
+      color: #9a9da0;
+      @media (max-width: 767px) {
+        margin-bottom: 5px;
+      }
+    }
+    .sliderCartLink {
+      @include font_3;
+      text-decoration: none;
+      font-size: 13px;
+      position: relative;
+      margin: 0 10px 25px;
+      padding-bottom: 3px;
+      text-align: center;
+      color: #122947;
+      cursor: pointer;
+      transition: 0.2s;
+      outline: 0;
+      @media (max-width: 767px) {
+        margin-bottom: 20px;
+      }
+    }
+    .sliderCartLink::after {
+      background: #122947;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+    }
+    .sliderCartLink:active,
+    .sliderCartLink:focus,
+    .sliderCartLink:hover {
+      opacity: 0.5;
+      transition: 0.2s;
+    }
+  }
+}
