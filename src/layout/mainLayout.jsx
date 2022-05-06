@@ -3,6 +3,7 @@ import {useParams} from "react-router-dom";
 import {Header} from "./header/header";
 import Footer from "./footer/footer";
 import {Follow} from "../components/follow/follow";
+import {Map} from "../components/map/map";
 
 // const users = [
 //     {
@@ -25,8 +26,8 @@ import {Follow} from "../components/follow/follow";
 const MainLayout = ({children}) => {
     // let { id } = useParams();
     // let newGetComponent = {
-    //     card: <div>Gago</div>,
-    //     name: 'Ashxen',
+    //     card: <div>Gevorg</div>,
+    //     name: 'Mariam',
     // }
 
     return (
@@ -37,6 +38,7 @@ const MainLayout = ({children}) => {
             {/*{users[id].age}*/}
             {/*{users[id].image}*/}
             <Follow />
+            <Map />
             <Footer />
         </>
     )
