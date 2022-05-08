@@ -51,7 +51,7 @@ const items = [
 const responsive = {
     0: { items: 1 },
     767: { items: 3 },
-    1199: { items: 6 },
+    1199: { items: 5 },
 };
 
 const MainContainer = () => {
