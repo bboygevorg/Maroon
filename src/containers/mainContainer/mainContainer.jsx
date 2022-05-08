@@ -95,6 +95,7 @@ const MainContainer = () => {
                             }}
                         />
                     </div>
+                    <div className={classes.sliderButtonContainer}/>
                 </div>
                 <a className={`${classes.bestSellersLink} ${classes.bestSellersLinkMobile} ${classes.button}`} href="#" aria-label="Смотреть все">Смотреть все</a>
             </section>
