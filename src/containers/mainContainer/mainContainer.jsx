@@ -82,15 +82,18 @@ const MainContainer = () => {
                             disableDotsControls={true}
                             items={items}
                             responsive={responsive}
+                            controlsStrategy="responsive"
+                            renderPrevButton={() => {
+                              return <div className={`${classes.sliderButton} ${classes.sliderButtonPrev}`}>
+                                <img src={prevLogo}  alt=""/>
+                              </div>
+                            }}
+                            renderNextButton={() => {
+                              return <div className={`${classes.sliderButton} ${classes.sliderButtonNext}`}>
+                                <img src={nextLogo} alt=""/>
+                              </div>
+                            }}
                         />
-                    </div>
-                    <div className={classes.sliderButtonContainer}>
-                        <div className={`${classes.sliderButton} ${classes.sliderButtonPrev}`}>
-                            <img src={prevLogo}  alt=""/>
-                        </div>
-                        <div className={`${classes.sliderButton} ${classes.sliderButtonNext}`}>
-                            <img src={nextLogo} alt=""/>
-                        </div>
                     </div>
                 </div>
                 <a className={`${classes.bestSellersLink} ${classes.bestSellersLinkMobile} ${classes.button}`} href="#" aria-label="Смотреть все">Смотреть все</a>
