@@ -1,0 +1,33 @@
+.sliderButton {
+  z-index: 0;
+  display: flex;
+  transition: 0.2s;
+  cursor: pointer;
+  outline: 0;
+  @media screen and (max-width: 1199px) and (min-width: 767px) {
+    display: flex;
+  }
+  @media screen and (max-width: 767px) and (min-width: 250px) {
+    display: none;
+  }
+}
+
+.sliderButtonPrev {
+  margin-left: 0.6rem;
+  @media screen and (max-width: 1199px) and (min-width: 767px){
+    margin-left: -1.8rem;
+  }
+}
+
+.sliderButtonNext {
+  @media screen and (max-width: 1199px) and (min-width: 767px){
+    margin-left: -1.8rem;
+  }
+}
+
+.sliderButton:active,
+.sliderButton:focus,
+.sliderButton:hover {
+  opacity: 0.5;
+  transition: 0.2s;
+}

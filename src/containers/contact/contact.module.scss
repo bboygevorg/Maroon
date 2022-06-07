@@ -1,0 +1,18 @@
+@import "../../assets/styles/styles";
+
+.contactMain {
+  background: #f8f8f6;
+  position: relative;
+}
+
+.main {
+  flex-grow: 1;
+  margin-top: 6.2rem;
+  .contacts {
+    padding-top: 3rem;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}

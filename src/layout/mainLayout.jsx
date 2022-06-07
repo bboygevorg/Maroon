@@ -37,8 +37,6 @@ const MainLayout = ({children}) => {
             {/*{users[id].name}*/}
             {/*{users[id].age}*/}
             {/*{users[id].image}*/}
-            <Follow />
-            <Map />
             <Footer />
         </>
     )

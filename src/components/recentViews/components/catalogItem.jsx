@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "../catalogItem/catalogs.module.scss";
 
-const CatalogItem = ({name, title, img, price, weight}) => {
+const RecentViewItem = ({name, title, img, price, weight}) => {
     return (
         <div className={classes.catalogList}>
             <a className={classes.productLink} href="#">
@@ -21,4 +21,4 @@ const CatalogItem = ({name, title, img, price, weight}) => {
     )
 }
 
-export default CatalogItem;
+export default RecentViewItem;

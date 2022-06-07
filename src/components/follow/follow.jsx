@@ -1,11 +1,7 @@
 import React, {Component} from "react";
 import classes from './follow.module.scss'
-import followImageOne from '../../assets/img/join1@1x.jpg'
-import followImageTwo from '../../assets/img/join2@1x.jpg'
-import followImageTree from '../../assets/img/join3@1x.jpg'
-import followImageFour from '../../assets/img/join4@1x.jpg'
-import followImageFive from '../../assets/img/join5@1x.jpg'
-import followImageSix from '../../assets/img/join6@1x.jpg'
+import {followImage} from "../../containers/static/static";
+import FollowImage from "./followImage/followImage";
 
 const Follow = () => {
     return (
@@ -13,24 +9,9 @@ const Follow = () => {
           <section className={`${classes.mainBlock} ${classes.follow}`}>
               <div className={classes.followContainer}>
                   <div className={classes.followImageWrapper}>
-                      <div>
-                          <img className={classes.followImage} src={followImageOne} alt=""Присоединяйтесь к нам/>
-                      </div>
-                      <div>
-                          <img className={classes.followImage} src={followImageTwo} alt=""Присоединяйтесь к нам/>
-                      </div>
-                      <div>
-                          <img className={classes.followImage} src={followImageTree} alt="Присоединяйтесь к нам"/>
-                      </div>
-                      <div>
-                          <img className={classes.followImage} src={followImageFour} alt="Присоединяйтесь к нам"/>
-                      </div>
-                      <div>
-                          <img className={classes.followImage} src={followImageFive} alt="Присоединяйтесь к нам"/>
-                      </div>
-                      <div>
-                          <img className={classes.followImage} src={followImageSix} alt="Присоединяйтесь к нам"/>
-                      </div>
+                      {followImage.map((item, index) => {
+                          return <FollowImage {...item}/>
+                      })}
                   </div>
                   <div className={classes.followContent}>
                       <h2 className={classes.followTitle}>Присоединяйтесь к нам</h2>

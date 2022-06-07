@@ -8,11 +8,11 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  @media (max-width: 1199px) {
+  @media screen and (max-width: 1199px) and (min-width: 767px){
     padding-left: 45px;
     padding-right: 45px;
   }
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) and (min-width: 250px){
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -46,10 +46,10 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-left: 6%;
-    @media (max-width: 1199px) {
+    @media screen and (max-width: 1199px) and (min-width: 767px){
       margin-left: 7.37%;
     }
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) and (min-width: 250px) {
       margin-left: 0;
       margin-top: 25px;
       margin-bottom: 10px;
@@ -65,10 +65,10 @@
       font-size: 16px;
       outline: 0;
       color: #122947;
-      @media (max-width: 1199px) {
+      @media screen and (max-width: 1199px) and (min-width: 767px){
         margin-right: 25px;
       }
-      @media (max-width: 767px) {
+      @media screen and (max-width: 767px) and (min-width: 250px){
         margin-right: 10px;
         margin-bottom: 15px;
         width: 90%;
@@ -92,19 +92,19 @@
     margin-left: auto;
     padding: 0;
     max-width: 120px;
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) and (max-width: 250px) {
       margin-left: 0;
       max-width: 100%;
     }
     .socialItem {
       margin-right: 30px;
-      @media (max-width: 1199px) {
+      @media screen and (max-width: 1199px) and (min-width: 767px){
         margin-right: 25px;
       }
-      @media (max-width: 767px) {
+      @media screen and (max-width: 767px) and (min-width: 250px){
         margin-right: 30px;
       }
-      @media (max-width: 767px) {
+      @media screen and (max-width: 767px) and (min-width: 250px){
         .socialItem:nth-child(3) {
           margin-right: 30px;
         }
@@ -120,7 +120,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) and (min-width: 250px) {
     display: block;
   }
 }
@@ -128,7 +128,7 @@
 .footerCopyright {
   padding-top: 18px;
   padding-bottom: 18px;
-  @media (max-width: 767px) {
+  @media screen and (max-width: 250px) and (min-width: 250px) {
     padding-top: 24px;
     padding-bottom: 24px;
   }
@@ -144,7 +144,7 @@
   font-size: 12px;
   margin: 0;
   color: #959595;
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) and (min-width: 250px) {
     margin-bottom: 14px;
   }
 }
@@ -155,7 +155,7 @@
   font-size: 12px;
   margin: 0;
   color: #959595;
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) and (min-width: 250px){
     margin-bottom: 14px;
   }
 }

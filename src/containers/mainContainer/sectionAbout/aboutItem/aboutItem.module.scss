@@ -1,53 +1,65 @@
 @import '../../../../assets/styles/styles';
 
-.textDecoration {
-  text-decoration: none;
+.promoCardImages {
+  @media screen and (max-width: 767px) and (min-width: 250px) {
+    margin: 0 0.5rem;
+  }
+  .textDecoration {
+    text-decoration: none;
+    .promoCardImage {
+      background: #ede7e1;
+      display: block;
+      width: 20.6rem;
+      height: 26.3rem;
+      object-fit: cover;
+      object-position: center;
+      @media screen and (max-width: 1199px) and (min-width: 767px) {
+        height: auto;
+        width: 100%;
+      }
+      @media screen and (max-width: 767px) and (min-width: 250px){
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background-position: center;
+      }
+    }
+    .promoCardText {
+      @include  font_3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0.6rem 0 0;
+      color: #122947;
+      transition: 0.2s;
+      @media screen and (max-width: 767px) and (min-width: 250px) {
+        margin-top: 0.4rem;
+        font-size: 13px;
+      }
+      .promoCardIcon {
+        height: 12px;
+        width: 26px;
+        @media screen and (max-width: 767px) and (min-width: 250px) {
+          height: 0.6rem;
+          width: 1.4rem;
+        }
+      }
+    }
+  }
+  .promoHover:active > .promoCardText,
+  .promoHover:focus > .promoCardText,
+  .promoHover:hover > .promoCardText {
+    transition: 0.2s;
+    opacity: 0.5;
+  }
 }
 
-.promoCardImage {
-  background: #ede7e1;
-  display: block;
-  width: 330px;
-  height: 422px;
-  object-fit: cover;
-  object-position: center;
-  @media (max-width: 1199px) {
-    height: auto;
-    width: 100%;
-  }
-  @media (max-width: 767px) {
-    height: calc((50vw - 30px) / (130 / 170));
-    width: 100%;
-    min-width: 130px;
-  }
-}
 
-.promoCardText {
-  @include  font_3;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px 0 0;
-  color: #122947;
-  transition: 0.2s;
-  @media (max-width: 767px) {
-    margin-top: 7px;
-    font-size: 12px;
-  }
-}
 
-.promoCardIcon {
-  height: 12px;
-  width: 26px;
-  @media (max-width: 767px) {
-    height: 10px;
-    width: 23px;
-  }
-}
 
-.promoHover:active > .promoCardText,
-.promoHover:focus > .promoCardText,
-.promoHover:hover > .promoCardText {
-  transition: 0.2s;
-  opacity: 0.5;
-}
+
+
+
+
+
+

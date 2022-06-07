@@ -4,27 +4,27 @@
   @include font_2;
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 58px;
-  margin: 47px 0 10px;
-  @media (max-width: 1199px) {
-    margin: -10px 0 10px;
-    font-size: 54px;
-    line-height: 63px;
+  font-size: 3.6rem;
+  margin: 2.9rem 0 0.6rem;
+  @media screen and (max-width: 1199px) and (min-width: 767px) {
+    margin: -0.6rem 0.6rem;
+    font-size: 3.3rem;
+    line-height: 5.9rem;
   }
-  @media (max-width: 767px) {
-    margin: 0 0 5px;
-    font-size: 42px;
-    line-height: 49px;
+  @media screen and (max-width: 767px) and (min-width: 250px) {
+    margin: 0 0 0.3rem;
+    font-size: 3.3rem;
+    line-height: 4.1rem;
   }
 }
 
 .aboutDescription {
   @include font_3;
-  font-size: 18px;
+  font-size: 1.1rem;
   text-align: center;
   margin: 0;
-  @media (max-width: 767px) {
-    font-size: 16px;
+  @media screen and (max-width: 767px) and (min-width: 250px) {
+    font-size: 1.1rem;
     line-height: 1.4;
   }
 }
@@ -36,7 +36,7 @@
 .aboutButton {
   margin: 33px auto 0;
   text-decoration: none;
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) and (min-width: 250px) {
     margin-top: 25px;
   }
 }

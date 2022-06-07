@@ -1,32 +1,32 @@
 @import '../../assets/styles/styles';
 
 .mainBlock {
-  margin-bottom: 140px;
-  @media (max-width: 1199px) {
-    margin-bottom: 120px;
+  margin-bottom: 8.8rem;
+  @media screen and (max-width: 1199px) and (min-width: 767px) {
+    margin-bottom: 7.5rem;
   }
-  @media (max-width: 767px) {
-    margin-bottom: 70px;
+  @media screen and (max-width: 767px) and (min-width: 250px) {
+    margin-bottom: 4.3rem;
   }
 }
 
 .follow {
-  @media (max-width: 1199px) {
-    padding: 0 45px;
+  @media screen and (max-width: 1199px) and (min-width: 767px) {
+    padding: 0 2.8rem;
   }
-  @media (max-width: 767px) {
-    padding: 0 15px;
+  @media screen and (max-width: 767px) and (min-width: 250px) {
+    padding: 0 0.9rem;
   }
   .followContainer {
     display: flex;
     align-items: center;
     max-width: 1170px;
     margin: 0 auto;
-    @media (max-width: 1199px) {
+    @media screen and (max-width: 1199px) and (min-width: 767px) {
       align-items: flex-start;
       justify-content: space-between;
     }
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) and (min-width: 250px) {
       flex-direction: column-reverse;
     }
     .followImageWrapper {
@@ -35,36 +35,28 @@
       flex-wrap: wrap;
       width: 100%;
       max-width: 699px;
-      @media (max-width: 1199px) {
+      @media screen and (max-width: 1199px) and (min-width: 767px) {
         width: 354px;
         min-width: 354px;
         max-width: 354px;
       }
-      @media (max-width: 767px) {
+      @media screen and (max-width: 767px) and (min-width: 250px) {
         width: 100%;
         min-width: 0;
         max-width: none;
       }
-      .followImage {
-        width: 100%;
-        height: 233px;
-        object-fit: cover;
-        object-position: center;
-        @media (max-width: 1199px) {
-          height: 177px;
-        }
-        @media (max-width: 767px) {
-          height: auto;
-          width: 100%;
-        }
-      }
     }
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) and (min-width: 250px) {
       .followImageWrapper > div {
         width: 50%;
       }
     }
-    @media (max-width: 1199px) {
+    @media screen and (max-width: 1199px) and (min-width: 767px) {
+      .followImageWrapper > div:nth-child(3n+1) {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 767px) and (min-width: 250px) {
       .followImageWrapper > div:nth-child(3n+1) {
         display: none;
       }
@@ -75,47 +67,45 @@
       align-items: flex-start;
       margin-left: 71px;
       height: 188px;
-      @media (max-width: 1199px) {
-        margin-left: 48px;
-        padding-top: 49px;
+      @media screen and (max-width: 1199px) and (min-width: 767px) {
+        margin-left: 3rem;
+        padding-top: 3rem;
       }
-      @media (max-width: 767px) {
+      @media screen and (max-width: 767px) and (min-width: 250px) {
         align-items: center;
         padding: 0;
-        margin: -8px auto 74px;
+        margin: -0.5rem auto 6.5rem;
       }
       .followTitle {
         @include font_2;
-        margin: 0 0 15px;
-        font-size: 32px;
+        margin: 0 0 0.9rem;
+        font-size: 2rem;
         line-height: 1.3;
         font-weight: 500;
-        @media (max-width: 767px) {
+        @media screen and (max-width: 767px) and (min-width: 250px) {
           text-align: center;
-          font-size: 28px;
+          font-size: 1.75rem;
           line-height: 1.25;
-          margin-bottom: 12px;
+          margin-bottom: 0.7rem;
         }
       }
       .followText {
         @include font_3;
-        font-size: 18px;
+        font-size: 1.1rem;
         margin: 0;
-        max-width: 381px;
-        @media (max-width: 767px) {
-          padding: 0 5px;
+        max-width: 23.8rem;
+        @media screen and (max-width: 767px) and (min-width: 250px) {
+          padding: 0 0.3rem;
+          text-align: center;
         }
       }
-      .followText:not(:last-of-type) {
-        margin-bottom: 1em;
-      }
       .followLink {
-        margin-top: 33px;
-        padding: 12px 33px;
+        margin-top: 2rem;
+        padding: 0.7rem 2.6rem;
         text-decoration: none;
-        @media (max-width: 767px) {
-          margin-top: 24px;
-          padding: 12px 27px;
+        @media screen and (max-width: 767px) and (min-width: 250px) {
+          margin-top: 1.5rem;
+          padding: 0.7rem 1.6rem;
         }
       }
     }

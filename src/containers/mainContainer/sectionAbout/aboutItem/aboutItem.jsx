@@ -1,22 +1,21 @@
 import React, {Component} from "react";
 import classes from './aboutItem.module.scss';
 import {NavLink} from "react-router-dom";
-import mainArrow from '../../../../assets/svg/sprite/main-arrow.svg'
-import mainJpg from '../../../../assets/img/main1@1x.jpg'
 
-const AboutItem = () => {
+const AboutItem = ({img, title, arrow}) => {
     return (
-        <div>
+        <div className={classes.promoCardImages}>
             <NavLink className={`${classes.textDecoration} ${classes.promoHover}`} to="/catalog">
-                <picture>
-                    <img src={mainJpg} className={classes.promoCardImage}/>
-                </picture>
+                <div>
+                    <img src={img} className={classes.promoCardImage}/>
+                </div>
                 <div className={classes.promoCardText}>
-                    <span>Уход для лица</span>
-                    <img src={mainArrow} className={classes.promoCardIcon} alt=""/>
+                    <span>{title}</span>
+                    <img src={arrow} className={classes.promoCardIcon} alt=""/>
                 </div>
             </NavLink>
         </div>
+
     )
 }
 

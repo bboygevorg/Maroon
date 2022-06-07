@@ -15,7 +15,7 @@ const Footer = () => {
                         <img src={logo} alt="maroon"/>
                     </a>
                     <div className={classes.footerList}>
-                        <NavLink className={classes.footerLink} to="/catalog">Каталог</NavLink>
+                        <NavLink className={classes.footerLink} to="/catalog/catalog">Каталог</NavLink>
                         <NavLink className={classes.footerLink} to="/about">О нас</NavLink>
                         <NavLink className={classes.footerLink} to="/shops">Магазины</NavLink>
                         <NavLink className={classes.footerLink} to="/contacts">Контакты</NavLink>

@@ -1,11 +1,11 @@
-@import "../../assets/styles/styles";
+@import "../../../assets/styles/styles";
 
 
 .sliderPosition {
   position: relative;
   max-width: 230px;
   padding: 2px;
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) and (min-width: 250px){
     margin: 0 auto;
   }
 
@@ -33,7 +33,7 @@
       margin-bottom: 9px;
       text-align: center;
       color: #9a9da0;
-      @media (max-width: 767px) {
+      @media screen and (max-width: 767px) and (min-width: 250px) {
         margin-bottom: 5px;
       }
     }
@@ -49,7 +49,7 @@
       cursor: pointer;
       transition: 0.2s;
       outline: 0;
-      @media (max-width: 767px) {
+      @media screen and (max-width: 767px) and (min-width: 250px) {
         margin-bottom: 20px;
       }
     }

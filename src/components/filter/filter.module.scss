@@ -1,0 +1,140 @@
+@import '../../assets/styles/styles';
+
+*::before {box-sizing: border-box}
+*::after {box-sizing: border-box}
+
+
+.wrapper {
+  display: none;
+  position: relative;
+  padding-bottom: 13.7rem;
+  @media screen and (max-width: 1199px) and (min-width: 767px) {
+    padding-bottom: 4.6rem;
+  }
+  .filterPosition {
+    max-width: 48.7rem;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width: 1199px) and (min-width: 767px) {
+      padding-bottom: 4.4rem;
+      margin: 0;
+      padding-left: 2.2rem;
+    }
+    @media screen and (max-width: 767px) and (min-width: 250px) {
+      flex-direction: column;
+      display: none;
+    }
+    .filterBlock {
+      width: 30%;
+      margin: 0.6rem;
+      .filterBlockHead {
+        margin-bottom: 1.2rem;
+        .filterSubtitle {
+          @include font_4;
+          font-size: 1.2rem;
+          margin-top: 0;
+          display: block;
+        }
+      }
+      .filterItem  {
+        line-height: 2.2;
+        display: flex;
+        flex-direction: column;
+        .checkBox {
+          display: none;
+        }
+        .fakeBox {
+          display: inline-block;
+          width: 0.7rem;
+          height: 0.7rem;
+          border: 1px solid #cdcdcd;
+          border-radius: 50%;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            width: 0.6rem;
+            height: 0.6rem;
+            background-color: #122947;
+            opacity: 0;
+            transition: .2s;
+            border-radius: 50%;
+          }
+        }
+        .checkBox:checked + .fakeBox::before {
+         opacity: 1;
+        }
+        .filterCheckBoxLabel {
+          position: relative;
+          padding-left: 0.6rem;
+          color: #cdcdcd;
+          @include font_3;
+          font-size: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .filterButtonPosition {
+    width: 100%;
+    max-width: 48.7rem;
+    display: flex;
+    margin: 0 auto;
+    padding-left: 3.1rem;
+    @media screen and (max-width: 1199px) and (min-width: 767px) {
+      padding: 0;
+    }
+    @media screen and (max-width: 767px) and (min-width: 250px) {
+      padding: 0;
+      margin-top: 1.9rem;
+    }
+    .filterButtons {
+      margin-left: auto;
+      @media screen and (max-width: 1199px) and (min-width: 767px) {
+        margin: 0 auto;
+      }
+      @media screen and (max-width: 767px) and (min-width: 250px) {
+        margin: 0 auto;
+        flex-wrap: wrap;
+        text-align: center;
+      }
+      .filterButton {
+        @include font_4;
+        font-size: 1rem;
+        font-weight: normal;
+        background: 0 0;
+        padding: 0.4rem 1.6rem 0.6rem;
+        cursor: pointer;
+        border-radius: 2px;
+        border: 1px solid #b3bac1;
+        color: #122947;
+        &:focus,
+        &:hover {
+          border: 1px solid #122947;
+        }
+        @media screen and (max-width: 1199px) and (min-width: 767px) {
+          font-size: 0.7rem;
+        }
+      }
+      .filterButtonLeft {
+        margin-left: 1.2rem;
+        @media screen and (max-width: 767px) and (min-width: 250px){
+          margin-right: 1.25rem;
+        }
+        @media (max-width: 351px) {
+          margin-top: 0.9rem;
+          margin-left: 10px;
+        }
+      }
+      .filterButton:not(:last-child) {
+        margin-left: 1.2rem;
+      }
+    }
+  }
+}

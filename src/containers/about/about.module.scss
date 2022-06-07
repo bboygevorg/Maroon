@@ -1,0 +1,31 @@
+@import "../../assets/styles/styles";
+
+.main {
+  flex-grow: 1;
+  margin-top: 6.2rem;
+  background-image: linear-gradient(rgba(229, 285, 283, 84.25) 0%, rgba(303, 298, 158, 0.25) 100%);
+  @media screen and (max-width: 767px) and (max-width: 250px){
+    margin-top: 4.7rem;
+  }
+  .about {
+    padding-bottom: 3.7rem;
+    max-width: 1170px;
+    height: 38rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 5rem;
+      @include font_3;
+      font-weight: normal;
+      @media screen and (max-width: 1199px) and (min-width: 767px) {
+        font-size: 3rem;
+      }
+      @media screen and (max-width: 767px) and (min-width: 250px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -1,12 +1,15 @@
 import React from "react";
-import classes from './catalogItem.module.scss'
-import productImage from '../../../assets/img/catalog/high@1x.jpg'
+import classes from './catalogs.module.scss'
 import CatalogItem from "../components/catalogItem";
+import {Catalog} from "../../../containers/static/static";
+
 
 const CatalogList = () => {
     return (
         <>
-            <CatalogItem />
+            {Catalog.map((item, index) => {
+                return <CatalogItem {...item} key={index} />
+            })}
         </>
     )
 }

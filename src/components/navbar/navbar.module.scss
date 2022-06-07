@@ -2,30 +2,7 @@
 
 .nav {
   display: flex;
-  .item {
-  }
-  .link {
-    margin: 0 2.5rem 0 0;
-    text-decoration: none;
-    @include font_3;
-    color: #122947;
-    outline: 0;
-    cursor: pointer;
-    transition: 0.2s;
-  }
-  .link:hover {
-    color: #dbdce0;
-  }
-
-  .contacts {
-    display: none;
-  }
-}
-
-
-@media (max-width: 1199px) {
-
-  .nav {
+  @media screen and (max-width: 1199px) and (min-width: 767px) {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -36,41 +13,77 @@
     background-color: #f8f8f6;
     transition: 0.15s opacity;
     box-shadow: 0 4px 30px rgb(214 214 214 / 19%);
-    opacity: 0;
-
-    .item {
+    display: none;
+    z-index: -1;
+  }
+  @media screen and (max-width: 767px) and (min-width: 250px) {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    transform: translateY(100%);
+    width: 100%;
+    background-color: #f8f8f6;
+    transition: 0.15s opacity;
+    box-shadow: 0 4px 30px rgb(214 214 214 / 19%);
+    display: none;
+  }
+  .item {
+    @media screen and (max-width: 1199px) and (min-width: 767px) {
       display: flex;
       flex-direction: column;
-      padding: 30px 45px;
+      padding: 1.8rem 2.8rem;
       font-weight: 500;
       cursor: pointer;
-      .link {
-        font-family: "Raleway", "Arial", sans-serif;
-        font-weight: 500;
-        font-size: 32px;
-        padding: 20px 0;
-      }
     }
-    .contacts {
+    @media screen and (max-width: 767px) and (min-width: 250px) {
       display: flex;
-      padding: 10px 45px 61px;
+      flex-direction: column;
+      padding: 1.8rem 0.6rem;
+      font-weight: 500;
+      cursor: pointer;
     }
-    .social_item:not(:first-child) {
-      margin-left: 20px;
+    .link {
+      margin: 0 2.5rem 0 0;
+      text-decoration: none;
+      @include font_3;
+      color: #122947;
+      outline: 0;
+      cursor: pointer;
+      transition: 0.2s;
+      &:hover {
+        color: #dbdce0;
+      }
+      @media screen and (max-width: 1199px) and (min-width: 767px) {
+        @include font;
+        font-weight: 500;
+        font-size: 1.9rem;
+        padding: 1.25rem;
+      }
+      @media screen and (max-width: 767px) and (min-width: 250px) {
+        @include font;
+        font-weight: 500;
+        font-size: 1.9rem;
+        padding: 0.75rem 0.70rem;
+      }
     }
   }
-}
-
-@media (max-width: 767px) {
-  .nav{
-    .item {
-      padding: 40px 15px;
-      .link {
-        padding: 12px;
+  .contacts {
+    display: none;
+    @media screen and (max-width: 1199px) and (min-width: 767px){
+      display: flex;
+      padding: 0.6rem 3.8rem 3.8rem;
+      .socialItem:not(:first-child) {
+        margin-left: 1.25rem;
       }
     }
-    .contacts {
-      padding: 10px 27px 50px;
+    @media screen and (max-width: 767px) and (min-width: 250px){
+      display: flex;
+      padding: 0.6rem 0.8rem 3.8rem;
+      .socialItem:not(:first-child)  {
+        margin-left: 1.25rem;
+      }
     }
   }
 }

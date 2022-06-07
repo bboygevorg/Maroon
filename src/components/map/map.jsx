@@ -3,6 +3,7 @@ import classes from './map.module.scss';
 import facebook from '../../assets/svg/sprite/facebook-icon.svg'
 import instagram from '../../assets/svg/sprite/instagram-icon.svg'
 import twitter from '../../assets/svg/sprite/twitter-icon.svg'
+import map from '../../assets/img/map@1x.jpg'
 
 const Map = () => {
     return (
@@ -45,8 +46,10 @@ const Map = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className={`${classes.contactsMapWrapper} ${classes.map}`}>
-                        <div></div>
+                    <div className={classes.contactsMapWrapper}>
+                        <div>
+                            <img className={classes.map} src={map} alt=""/>
+                        </div>
                     </div>
             </section>
         </>
