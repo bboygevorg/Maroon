@@ -27,8 +27,6 @@ S
 #src/components/catalog/catalogs.jsx,0\c\0ce98b570d2340c8132028b06aafb467f37e2178
 e
 5src/components/recentViews/components/catalogItem.jsx,b\7\b7e83149122522b9cb29ccfbc11d051b27227c9c
-P
- src/containers/static/static.jsx,e\4\e4d9325a2489c91c4a174b8e3111998b9c0c395c
 c
 3src/components/recentViews/catalogItem/catalogs.jsx,c\5\c57802f4fc3b32a1e049a8c02c01c666d3993f46
 W
@@ -49,7 +47,14 @@ $src/layout/header/header.module.scss,c\3\c3bedca69c59ecda6f8c85280517e17635b8f
 src/App.test.js,9\2\923703ced91ac38943d37930d9d27a7ebe8f01ad
 =
 src/index.css,c\5\c5d38a62d1faae90a2acaa34b79a7ef365c917e4
-^
-.src/containers/mainContainer/mainContainer.jsx,e\0\e07d98edcd986f5060a9ff6ee5d80d01b5493a53
 A
 public/index.html,f\4\f43ecdf8d666ee908aacce037b4cd72159e4741b
+L
+src/layout/header/header.jsx,1\4\142cf24b9a1aa90758b7a6555e852a8007ed031e
+;
+src/App.css,a\a\aa7165aefcf8ee3d73539e99ab007daf1aa18d8d
+<
+src/index.js,f\9\f900edc44cb929c2267a16100a32851f6d5b477d
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302

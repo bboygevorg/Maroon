@@ -10,7 +10,7 @@ const Follow = () => {
               <div className={classes.followContainer}>
                   <div className={classes.followImageWrapper}>
                       {followImage.map((item, index) => {
-                          return <FollowImage {...item}/>
+                          return <FollowImage {...item} key={index}/>
                       })}
                   </div>
                   <div className={classes.followContent}>
