@@ -47,16 +47,9 @@ T
 $src/layout/header/header.module.scss,c\3\c3bedca69c59ecda6f8c85280517e17635b8fb0c
 ?
 src/App.test.js,9\2\923703ced91ac38943d37930d9d27a7ebe8f01ad
-<
-src/index.js,f\9\f900edc44cb929c2267a16100a32851f6d5b477d
 =
 src/index.css,c\5\c5d38a62d1faae90a2acaa34b79a7ef365c917e4
 ^
 .src/containers/mainContainer/mainContainer.jsx,e\0\e07d98edcd986f5060a9ff6ee5d80d01b5493a53
-:
-
-src/App.js,1\e\1e43fa63aecd2127be034b3fb9d4caa172275714
 A
 public/index.html,f\4\f43ecdf8d666ee908aacce037b4cd72159e4741b
-I
-src/layout/mainLayout.jsx,3\7\3734809ccbf3276fc125b5cfbd4628502ce0fe96
