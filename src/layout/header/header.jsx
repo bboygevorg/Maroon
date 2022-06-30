@@ -29,7 +29,11 @@ const Header = () => {
 
     return (
         <header className={`${classes.header} ${headerScroll ? classes.headerColored : classes.headerTransparent} ` }>
-            <button className={classes.burgerMenu} onClick={() => {setIsActiveNavbar(!isActiveNavbar)}}></button>
+            <button className={classes.burgerMenu} onClick={() => `${setIsActiveNavbar(!isActiveNavbar)} ${classes.change}`}>
+                <div className={classes.burger1}></div>
+                <div className={classes.burger2}></div>
+                <div className={classes.burger3}></div>
+            </button>
             <a href="/" className={classes.logo}>
                 <img src={logo} alt="maroon"/>
             </a>
