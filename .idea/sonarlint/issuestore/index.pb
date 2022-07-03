@@ -49,8 +49,6 @@ $src/layout/header/header.module.scss,c\3\c3bedca69c59ecda6f8c85280517e17635b8f
 src/index.css,c\5\c5d38a62d1faae90a2acaa34b79a7ef365c917e4
 A
 public/index.html,f\4\f43ecdf8d666ee908aacce037b4cd72159e4741b
-L
-src/layout/header/header.jsx,1\4\142cf24b9a1aa90758b7a6555e852a8007ed031e
 ;
 src/App.css,a\a\aa7165aefcf8ee3d73539e99ab007daf1aa18d8d
 <
@@ -58,3 +56,15 @@ L
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+a
+1src/components/follow/followImage/followImage.jsx,a\6\a6aa2812b1d08328e2d8c37c090b6beaf7670f9d
+P
+ src/components/follow/follow.jsx,1\3\1359340a8eeb19848e42ba059d880df9b2dd1817
+J
+src/components/map/map.jsx,4\d\4d6c9e21c2f917ceb571dd12318ef4e5f37377eb
+P
+ src/containers/static/static.jsx,e\4\e4d9325a2489c91c4a174b8e3111998b9c0c395c
+R
+"src/components/section/section.jsx,6\f\6f42d14670e95f5c16ac50bfdc5f34215556dc17
+A
+package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47

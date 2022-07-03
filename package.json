@@ -2,7 +2,7 @@
   "name": "react-maroon",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bboygevorg.github.io/Maroon",
+  "homepage": "https://bboygevorg.github.io/maroon",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
