@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from "./layout/mainLayout";
 import Catalog from "./containers/catalog/catalog";

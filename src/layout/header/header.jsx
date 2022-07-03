@@ -10,7 +10,9 @@ import {useParams} from "react-router-dom";
 const Header = () => {
    const [isActiveNavbar, setIsActiveNavbar] = useState(false);
    const [headerScroll, setHeaderScroll] = useState(false);
+    // eslint-disable-next-line
     let { type } = useParams();
+
 
     // const activeCLick = () => {
     //
