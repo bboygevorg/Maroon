@@ -34,7 +34,7 @@ const Header = () => {
                 <div className={classes.burger2}></div>
                 <div className={classes.burger3}></div>
             </button>
-            <a href="/" className={classes.logo}>
+            <a href="/maroon" className={classes.logo}>
                 <img src={logo} alt="maroon"/>
             </a>
             <div className={classes.navigate}>
