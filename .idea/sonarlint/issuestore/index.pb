@@ -39,8 +39,6 @@ R
 "src/containers/catalog/catalog.jsx,8\6\86219efe6c260c8cbd4679f30eae87d72910054a
 M
 src/assets/styles/styles.scss,c\3\c3d4f5bd629848a21504cf085151dcadff170072
-]
--src/containers/mainContainer/main.module.scss,1\0\1022fd3dad6ed43d38cb2aa00daceb9590925192
 T
 $src/layout/header/header.module.scss,c\3\c3bedca69c59ecda6f8c85280517e17635b8fb0c
 ?

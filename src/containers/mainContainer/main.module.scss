@@ -81,17 +81,18 @@
         }
       }
       .aboutItem {
-        width: 64.5rem;
-        display: flex;
-        justify-content: space-between;
+          display: flex;
+          justify-content: space-between;
+          width: 64.5rem;
+        }
         @media screen and (max-width: 1199px) and (min-width: 767px) {
           display: flex;
           justify-content: space-between;
-          width: 100%;
+          width: auto;
           min-width: 0;
         }
         @media screen and (max-width: 767px) and (min-width: 250px) {;
-          width: 100%;
+          width: auto;
         }
         .aboutItemCopy {
           background-color: green;
@@ -380,13 +381,4 @@
 
 .button {
   @include button;
-}
-
-
-
-
-
-
-
-
 }
