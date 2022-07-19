@@ -16,7 +16,7 @@ function App() {
                   <Route path={'/catalog/:type'} element={<MainLayout children={<Catalog />} />} />
                   <Route path={'/about'} element={<MainLayout children={<About />} />} />
                   <Route path={'/contacts'} element={<MainLayout children={<Contact/>} />} />
-                  <Route path={'/bboygevorg.github.io/maroon'} element={<MainLayout children={<MainContainer />} />} />
+                  <Route path={'/maroon'} element={<MainLayout children={<MainContainer />} />} />
               </Routes>
           </Router>
       </>
