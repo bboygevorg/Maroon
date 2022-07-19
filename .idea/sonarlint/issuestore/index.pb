@@ -66,3 +66,11 @@ R
 "src/components/section/section.jsx,6\f\6f42d14670e95f5c16ac50bfdc5f34215556dc17
 A
 package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
+y
+Isrc/containers/mainContainer/sectionAbout/aboutItem/aboutItem.module.scss,2\b\2b818228f2f00c77a9c421d47093da032995b46f
+q
+Asrc/containers/mainContainer/sectionAbout/aboutItem/aboutItem.jsx,b\9\b9b67ae878461d15c43a6064e069ae736245c1a8
+^
+.src/containers/mainContainer/mainContainer.jsx,e\0\e07d98edcd986f5060a9ff6ee5d80d01b5493a53
+]
+-src/containers/mainContainer/main.module.scss,1\0\1022fd3dad6ed43d38cb2aa00daceb9590925192
